@@ -1,0 +1,11 @@
+# Vim
+vim/.netrwhist
+
+# Neovim
+nvim/lazy-lock.json
+nvim/pack/
+
+# System
+.DS_Store
+*.swp
+*.swo

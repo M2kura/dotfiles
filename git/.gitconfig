@@ -1,0 +1,64 @@
+[user]
+	email = 136367855+M2kura@users.noreply.github.com
+	name = M2kura
+
+[core]
+    # Use vim as default editor for commit messages
+    editor = nvim
+    # Prevent showing files whose names contain non-ASCII symbols as unversioned
+    precomposeunicode = true
+    # Better whitespace handling
+    whitespace = trailing-space,space-before-tab
+
+[init]
+    # Set default branch name for new repositories
+    defaultBranch = main
+
+[color]
+    # Use colors in Git commands output
+    ui = auto
+
+[pull]
+    # Prevent accidental merge commits during pull
+    rebase = true
+
+[push]
+    # Push only the current branch by default
+    default = simple
+    # Automatically set upstream for new branches
+    autoSetupRemote = true
+
+[alias]
+    # Shorter commands
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    # Pretty log
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    # Show changes
+    df = diff
+    # Show staged changes
+    dc = diff --cached
+    # Show last commit
+    last = log -1 HEAD
+    # Undo last commit but keep changes
+    undo = reset HEAD~1 --soft
+    # List all aliases
+    aliases = config --get-regexp alias
+
+[merge]
+    # Include summaries of merged commits in newly created merge commit messages
+    log = true
+    # Use better diff tool
+    conflictstyle = diff3
+
+[diff]
+    # Use better diff algorithm
+    algorithm = patience
+    # Detect renamed files
+    renames = copies
+
+[help]
+    # Correct and execute mistyped commands
+    autocorrect = 1
