@@ -82,10 +82,9 @@ alias dud='du -d 1 -h'
 alias duf='du -sh *'
 
 # Development Tool Aliases
-alias nvim="$HOME/nvim-linux64/bin/nvim"
-alias clion="$HOME/CLion-2024.2.2/clion-2024.2.2/bin/clion"
-alias pycharm="$HOME/pycharm-professional-2024.2.4/pycharm-2024.2.4/bin/pycharm"
-alias idea="$HOME/ideaIU-2024.2.4/idea-IU-242.23726.103/bin/idea"
+alias nvim="$HOME/IDEs/nvim/bin/nvim"
+alias idea="$HOME/IDEs/idea/idea-IU-242.23726.103/bin/idea"
+alias studio="$HOME/IDEs/android-studio/bin/studio"
 alias francinette="$HOME/francinette/tester.sh"
 alias paco="$HOME/francinette/tester.sh"
 
