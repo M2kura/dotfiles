@@ -4,7 +4,7 @@
 
 [core]
     # Use vim as default editor for commit messages
-    editor = nvim
+    editor = vim
     # Prevent showing files whose names contain non-ASCII symbols as unversioned
     precomposeunicode = true
     # Better whitespace handling
@@ -62,3 +62,5 @@
 [help]
     # Correct and execute mistyped commands
     autocorrect = 1
+[credential]
+	helper = store
