@@ -23,6 +23,10 @@ echo "Setting up Zed..."
 rm -rf "$HOME/.config/zed"
 ln -s "$DOTFILES/zed" "$HOME/.config/zed"
 
+echo "Setting up Ghostty..."
+rm -rf "$HOME/.config/ghostty"
+ln -s "$DOTFILES/ghostty" "$HOME/.config/ghostty"
+
 echo "Setting up shell configurations..."
 # Backup existing shell config files if they exist
 for file in .bashrc .profile .bash_logout; do
