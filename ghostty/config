@@ -1,3 +1,4 @@
 font-size = 17
 maximize = true
 keybind = ctrl+f11=toggle_fullscreen
+mouse-hide-while-typing = true
