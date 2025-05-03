@@ -6,6 +6,20 @@ NVIM_DIR="$HOME/IDEs/nvim"
 mkdir -p "$HOME/.config"
 mkdir -p "$HOME/IDEs"
 
+echo "Setting up i3 window manager..."
+# Install i3 and dependencies
+if command -v pacman >/dev/null 2>&1; then
+    # For Arch Linux
+    sudo pacman -S --noconfirm i3-wm i3status i3lock dmenu xorg-xrandr picom feh xss-lock network-manager-applet
+elif command -v apt-get >/dev/null 2>&1; then
+    # For Debian/Ubuntu
+    sudo apt-get install -y i3 i3status i3lock dmenu xrandr picom feh xss-lock network-manager-gnome
+fi
+
+# Create symlinks for i3 configuration
+rm -rf "$HOME/.config/i3"
+ln -s "$DOTFILES/i3" "$HOME/.config/i3"
+
 echo "Setting up Neovim..."
 # Check if nvim exists in IDEs directory
 if [ ! -d "$NVIM_DIR" ]; then
