@@ -33,10 +33,6 @@ fi
 rm -rf "$HOME/.config/nvim"
 ln -s "$DOTFILES/nvim" "$HOME/.config/nvim"
 
-echo "Setting up Zed..."
-rm -rf "$HOME/.config/zed"
-ln -s "$DOTFILES/zed" "$HOME/.config/zed"
-
 echo "Setting up Ghostty..."
 rm -rf "$HOME/.config/ghostty"
 ln -s "$DOTFILES/ghostty" "$HOME/.config/ghostty"
