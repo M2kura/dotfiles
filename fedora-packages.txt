@@ -1,0 +1,4 @@
+gcc
+vim
+xclip
+wl-clipboard

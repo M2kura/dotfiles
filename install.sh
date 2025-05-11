@@ -13,17 +13,22 @@ if command -v pacman >/dev/null 2>&1; then
 elif command -v apt-get >/dev/null 2>&1; then
     PACKAGE_MANAGER="apt"
     echo "Detected Debian/Ubuntu system"
+elif command -v dnf >/dev/null 2>&1; then
+    PACKAGE_MANAGER="dnf"
+    echo "Detected Fedora system"
 else
     PACKAGE_MANAGER="unknown"
     echo "Unknown package manager, only installing Neovim and configs"
 fi
 
-# Install packages if on Arch Linux
+# Install packages based on detected package manager
 if [ "$PACKAGE_MANAGER" = "pacman" ]; then
-    echo "Installing packages on from packages.txt..."
-
-	sudo pacman -S --needed --noconfirm - < "$DOTFILES/packages.txt"
-	
+    echo "Installing packages from arch-packages.txt..."
+	sudo pacman -S --needed --noconfirm - < "$DOTFILES/arch-packages.txt"
+    echo "Finished installing packages"
+elif [ "$PACKAGE_MANAGER" = "dnf" ]; then
+    echo "Installing packages from fedora-packages.txt..."
+	sudo dnf install -y $(cat "$DOTFILES/fedora-packages.txt")
     echo "Finished installing packages"
 fi
 
