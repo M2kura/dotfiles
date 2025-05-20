@@ -18,7 +18,7 @@ shopt -s dirspell
 shopt -s autocd
 
 # Environment Variables
-export JAVA_HOME=/usr/lib/jvm/temurin-21-jdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 
 # Path Configuration
 pathmunge() {
