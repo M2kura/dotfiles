@@ -84,7 +84,7 @@ alias duf='du -sh *'
 
 # Development Tool Aliases
 alias nvim="$HOME/IDEs/nvim/bin/nvim"
-alias idea="$HOME/IDEs/idea/idea-IU-242.23726.103/bin/idea"
+alias idea="$HOME/IDEs/idea/bin/idea"
 alias studio="$HOME/IDEs/android-studio/bin/studio"
 alias francinette="$HOME/francinette/tester.sh"
 alias paco="$HOME/francinette/tester.sh"
